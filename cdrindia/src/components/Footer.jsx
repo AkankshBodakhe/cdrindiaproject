@@ -107,6 +107,7 @@ const Footer = () => {
       >
         <FaArrowUp className="text-lg" />
       </button>
+
     </footer>
   );
 };

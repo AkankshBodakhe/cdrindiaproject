@@ -138,6 +138,7 @@ const MainSection = () => {
               CDR has been deeply involved in multiple policy research projects. Empirical studies of various sectors have helped CDR in contributing fruitfully to the policy issues. The focus areas for CDR are Regional Economic Development, Urban Water & Wastewater Management, Rural Water Supply Quality Management, Employment and Livelihood, etc.
             </p>
             <br />
+            <br />
             <p>
               <span className="font-bold text-orange-600">Advocacy : </span>
               It is imperative for any organization to take the decisions and policies to the end user / beneficiaries. CDR tries to play the role in case of government to beneficiary models.
