@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaArrowRight, FaArrowLeft , FaPause} from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft, FaPause } from "react-icons/fa";
 
 // Image imports
 import image1 from "../assets/carousel/image1.png";
@@ -47,7 +47,7 @@ const QuoteCarousel = () => {
   }, [paused]);
 
   return (
-        <div
+    <div
       className="relative w-screen h-[500px] overflow-hidden bg-white group"
       onMouseEnter={() => {
         setPaused(true);
@@ -70,7 +70,6 @@ const QuoteCarousel = () => {
               alt={`Slide ${index}`}
               className="w-full h-full object-cover"
             />
-
             {/* Quote Content */}
             <div className="absolute inset-0 flex items-center justify-start px-10 z-20">
               <div>
@@ -104,8 +103,24 @@ const QuoteCarousel = () => {
         </svg>
       </div>
 
+      {/* Floating Buttons - Vision, Mission, Donate */}
+<div className="absolute bottom-[5px] left-1/2 transform -translate-x-1/2 z-30 flex gap-12">
+  {["Vision", "Mission", "Donate"].map((label) => (
+    <button
+      key={label}
+      style={{ fontFamily: "Segoe UI", fontWeight: 600 }}
+      className="bg-white shadow-2xl w-[320px] h-[100px] rounded-md text-[24px] text-[#1c1c1c] transition-all duration-300 hover:-translate-y-2 hover:text-orange-500"
+    >
+      {label}
+    </button>
+  ))}
+</div>
+
+
+
+
       {/* Navigation Arrows */}
-      <div className="absolute bottom-25 right-6 flex gap-4 z-30">
+      <div className="absolute bottom-20 right-6 flex gap-4 z-30">
         <button
           onClick={prevSlide}
           className="text-white text-2xl p-2 rounded-full hover:bg-white hover:text-orange-500 transition duration-400 border-white border-4"
