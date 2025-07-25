@@ -5,7 +5,7 @@ import partnerIcon from "../assets/Partner.png";
 import heroBg from "../assets/hero-BG.jpg";
 
 
-const MainSection = () => {
+const HomeSection = () => {
   return (
     <div className="w-full bg-white font-sans text-[#1c1c1c]">
       {/* President’s Message Section */}
@@ -151,4 +151,4 @@ const MainSection = () => {
   );
 };
 
-export default MainSection;
+export default HomeSection;

@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import QuoteCarousel from './components/QuoteCarousel.jsx'
-import MainSection from './components/MainSection.jsx'
+import HomeSection from './components/HomeSection.jsx'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
     <>
     <Navbar />
     <QuoteCarousel/>
-    <MainSection/>
+    <HomeSection/>
     <Footer />
     </>
   )
