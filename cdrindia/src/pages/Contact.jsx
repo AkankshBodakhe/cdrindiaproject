@@ -1,4 +1,6 @@
 const Contact = () => (
-    <div className="p-10 text-center text-2xl text-gray-700">This is the Contact page</div>
+  <h1 className="p-10 text-center text-[55px] text-black font-dm">
+    Contact Us
+  </h1>
 );
 export default Contact;
